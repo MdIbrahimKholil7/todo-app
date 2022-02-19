@@ -1,0 +1,119 @@
+/* clear margin padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    font-size:2.7rem;
+    color: #fff;
+}
+.container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+}
+.todo-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.todo-body h3{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 2.3rem;
+    margin-bottom:1.7rem;
+}
+.todo-body,.todo-header{
+    width: 100%;
+}
+.todo-header{
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.todo-body h1{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.todo-header .todo-input{
+    padding: 1rem .5rem;
+    width: 50%;
+    border: none;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    
+}
+input[type='text']{
+    font-size: 1.4rem;
+}
+.todo-input:focus{
+    outline: none;
+}
+.todo-add{
+    padding: 1rem 2rem;
+    background:orange;
+    border: none;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    font-size:1.6rem;
+    color: #fff;
+
+}
+
+.new-item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 61%;
+    background:#fff;
+    color:#000;
+    margin:1rem 0;
+    border-radius: .5rem;
+}
+.new-item p{
+    font-size:1.7rem;
+    font-weight: 600;
+    padding:1rem;
+}
+.new-item div{
+    height: 100%;
+}
+.btn-container{
+    display: flex;
+}
+.check-btn{
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    background: green;
+    color: white;
+    border: none;
+}
+.trash-btn{
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    background: rgba(167, 25, 25, 0.945);
+    color: white;
+    border: none;
+}
+.line{
+    text-decoration:line-through;
+    opacity: 0.5;
+}
